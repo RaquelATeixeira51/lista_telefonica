@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Lista Telefonica</title>
 </head>
 <body>
+ <div class="container">
     <header>
         <img src="./img/logo (2).png">
         <h1>Lista Telefônica</h1>
     </header>
 
-    <form>
-        <input type="text" required placeholder="Nome do contato">
-        <input type="number" required placeholder="Número" min="0">
+    <form id="form-telefone">
+        <input type="text" id="nome-contato" required placeholder="Nome do contato">
+        <input type="number" id="numero-contato" required placeholder="Número" min="0">
         <button type="submit">Adicionar</button>
     </form>
-    <table>
+    <table cellspacing="0">
         <thead>
             <tr>
                 <th>
@@ -29,15 +34,9 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>
-                    Número 1
-                </td>
-                <td>
-                    11963298596
-                </td>
-            </tr>
         </tbody>
     </table>
+ </div>
+ <script src="./js/main.js"></script>
 </body>
 </html>
